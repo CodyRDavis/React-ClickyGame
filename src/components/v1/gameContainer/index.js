@@ -79,6 +79,10 @@ class gameContainer extends Component {
             {
                 name: "Fox",
                 image: "https://avatarfiles.alphacoders.com/163/thumb-163184.png"
+            },
+            {
+                name: "Samus",
+                image: "https://cdn-images-1.medium.com/max/1600/1*xv-6VKkaFh0lfao_bjG4Tw.png"
             }
         ]
     }
