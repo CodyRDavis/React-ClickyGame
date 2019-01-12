@@ -1,6 +1,7 @@
 .characterCard {
     max-width: 300px;
     font-size: 20px;
+    text-align: center;
 }
 .characterCard img {
     height: 300px;

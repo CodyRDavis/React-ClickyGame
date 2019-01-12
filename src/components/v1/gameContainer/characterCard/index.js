@@ -5,10 +5,12 @@ function characterCard(prop){
     const character = prop.data;
     const guessChecker = prop.guessChecker;
     const altText = `Picture of ${character.name}`
+
+    console.log (character.image);
     return(
-           <div className="characterCard" data-name={character.name} onClick={() => guessChecker(character.name)} >
-               <div><img src={character.name} alt={altText} /></div>
-           {character.name}</div> 
+            <div className="characterCard" data-name={character.name} onClick={() => guessChecker(character.name)} >
+                <img src={character.image} alt={altText} />
+            </div>
     );
 }
 

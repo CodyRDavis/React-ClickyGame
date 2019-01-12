@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './gameContainer.css'
 
 //components
 import CharacterCard from './characterCard';
@@ -12,11 +13,73 @@ class gameContainer extends Component {
         previousGuess: [],
         characterList: [
             {
-                name: "Eric",
-                image: ""
+                name: "Bowser Jr",
+                image: "https://avatarfiles.alphacoders.com/160/thumb-160375.png"
             },
-            {name: "Erik"},
-            {name: "James"}
+            {
+                name: "MetaKnight",
+                image: "https://avatarfiles.alphacoders.com/166/thumb-166155.jpg"
+            },
+            {
+                name: "Lucas",
+                image: "https://avatarfiles.alphacoders.com/161/thumb-161027.jpg"
+            },
+            {
+                name: "Bayonetta",
+                image: "https://avatarfiles.alphacoders.com/159/thumb-159750.png"
+            },
+            {
+                name: "Isabelle",
+                image: "https://avatarfiles.alphacoders.com/168/thumb-168582.jpg"
+            },
+            {
+                name: "Link",
+                image: "https://avatarfiles.alphacoders.com/709/thumb-70920.jpg"
+            },
+            {
+                name: "Mario",
+                image: "https://avatarfiles.alphacoders.com/741/thumb-74184.jpg"
+            },
+            {
+                name: "Captain Falcon",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163101.png"
+            },
+            {
+                name: "Chrom",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163117.png"
+            },
+            {
+                name: "Cloud",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163126.png"
+            },
+            {
+                name: "Daisey",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163132.png"
+            },
+            {
+                name: "King Deedeedee",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163142.png"
+            },
+            {
+                name: "Diddy Kong",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163148.png"
+            },
+            {
+                name: "Donkey Kong",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163158.png"
+            },
+            {
+                name: "Duck Hunt",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163162.png"
+            },
+            {
+                name: "Falco",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163175.png"
+            },
+            {
+                name: "Fox",
+                image: "https://avatarfiles.alphacoders.com/163/thumb-163184.png"
+            }
         ]
     }
 
@@ -65,7 +128,7 @@ class gameContainer extends Component {
                 previousGuess: [...this.state.previousGuess, name],
                 currentScore: this.state.currentScore + 1
             })
-            alert("Havent Guessed them before");
+            //alert("Havent Guessed them before");
         }else{
             if (this.state.currentScore > this.state.highScore){
                 this.setState({
@@ -89,7 +152,7 @@ class gameContainer extends Component {
                     currentScore={this.state.currentScore}
                     highScore={this.state.highScore}
                 />
-                <div>
+                <div className="characterDeck">
                     {this.state.characterList.map( (character, index) => (
                         <CharacterCard 
                             key={index}

@@ -1,0 +1,13 @@
+.characterDeck{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
