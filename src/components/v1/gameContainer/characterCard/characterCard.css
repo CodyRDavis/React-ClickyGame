@@ -1,0 +1,8 @@
+.characterCard {
+    max-width: 300px;
+    font-size: 20px;
+}
+.characterCard img {
+    height: 300px;
+    width: 300px;
+}
